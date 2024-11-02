@@ -1,0 +1,222 @@
+:root {
+    --main-color: #3cbfef;
+    --second-color: #afe5f8;
+    --secondary: #f15a2c;
+    --qatar-book: qatar-font-book;
+    --qatar-bold: "qatar-font-bold";
+    --dark-color: #0E171A;
+    --border-color: #2C2C2C;
+    --second-bg: #F7F8FB;
+    --gray-color: #6C6C6C;
+    --gray-color2: #8890A4;
+
+}
+
+/* start of the global style  */
+.gary-color {
+    color: var(--gray-color);
+}
+
+.gary-color-2 {
+    color: var(--gray-color2);
+}
+
+.second-bg {
+    background-color: #F7F8FB;
+}
+
+.font-book {
+    font-family: var(--qatar-book);
+}
+
+.font-bold {
+    font-family: var(--qatar-bold);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.main-bg {
+    background-color: var(--main-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.border-color {
+    border: 1px solid var(--border-color);
+}
+
+/* end of the global style  */
+/* start global fonts */
+@font-face {
+    font-family: qatar-font-bold;
+    src: url(../Arabic-Font-Family/ArabicBold.ttf);
+}
+
+@font-face {
+    font-family: qatar-font-book;
+    src: url(../Arabic-Font-Family/ArabicBook.ttf);
+}
+
+/* end global fonts */
+
+body {
+    font-family: "qatar-font-bold";
+    height: 10000px;
+}
+
+/* start of the navbar style */
+.nav-link {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18.003px;
+    /* 184.945% */
+}
+
+.active {
+    border-radius: 32.006px;
+    background: #FFF;
+    color: var(--main-color) !important;
+
+}
+
+@keyframes changeColor {
+
+    0%,
+    20% {
+        color: var(--main-color);
+    }
+
+    40%,
+    60% {
+        color: var(--second-color);
+    }
+
+    80%,
+    100% {
+        color: var(--main-color);
+    }
+}
+
+/* @keyframes changePositionPositive {
+
+    0%,
+    20% {
+        transform: translateX(3px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(2px);
+    }
+
+    80%,
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes changePositionNegative {
+
+    0%,
+    20% {
+        transform: translateX(-3px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(-2px);
+    }
+
+    80%,
+    100% {
+        transform: translateX(-3px);
+    }
+} */
+
+.navbar {
+    border-radius: 12px;
+    /* border: 1px rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px); */
+}
+
+.navbar span {
+    display: inline-block;
+    padding: 0 3px;
+    transition: transform 0.5s !important;
+}
+
+.navbar ul .nav-link:hover {
+    animation: changeColor 0.5s forwards;
+}
+
+/* .navbar ul .nav-link:hover span:nth-child(1) {
+    animation: changePositionPositive 0.5s forwards alternate;
+}
+
+.navbar ul .nav-link:hover span:nth-child(2) {
+    animation: changePositionNegative 0.5s forwards alternate;
+} */
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav ui li {
+    margin: 15px 0;
+}
+
+.nav-contact {
+    border-radius: 32.006px;
+    background: #FFF;
+    color: #15171A;
+    font-weight: 700;
+}
+
+/* start of the navbar style */
+
+/* start of the home section (Slider) */
+
+
+.swiper-slide a.down {
+    display: flex;
+    width: 36.006px;
+    height: 36.006px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    clip-path: polygon(0 0, 100% 0, 100% 53%, 100% 73%, 100% 84%, 0 100%);
+    overflow: hidden;
+    border-bottom-left-radius: 2% !important;
+    border-bottom-right-radius: 2% !important;
+}
+
+@media (max-width:992px) {
+    .navbar ul {
+        background-color: #f15a2c;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical>.swiper-pagination-bullets {
+        top: auto;
+        bottom: 70px !important;
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }
+}
