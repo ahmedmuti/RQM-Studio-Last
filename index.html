@@ -19,19 +19,20 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
-        body {
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-
         /* Inline critical CSS for improved loading speed */
         .swiper {
             width: 100%;
             height: 100vh;
+            /* touch-action: none; */
+            overflow: hidden;
+        }
+
+        .swiper-vertical {
+            touch-action: pan-y;
         }
 
         .swiper-slide {
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -142,7 +143,7 @@
     <!-- Swiper -->
     <header>
 
-        <div class="swiper mySwiper position-relative">
+        <div class="swiper mySwiper ">
 
             <div class="swiper-wrapper">
 
@@ -430,6 +431,7 @@
 
     <!-- Initialize Swiper -->
     <script defer>
+
         document.addEventListener("DOMContentLoaded", function () {
             new Swiper(".mySwiper", {
                 direction: "vertical",
@@ -445,11 +447,12 @@
                 observer: true, // Reinitialize when content changes
                 observeParents: true, // Observe container changes
                 mousewheel: false, // Disable scrolling with mouse wheel
-                touchStartPreventDefault: false, // Allow default touch behavior for scrolling
-                threshold: false,
-                allowTouchMove: window.innerWidth >= 768 // Enable Swiper on larger screens only
+                touchStartPreventDefault: true, // Allow default touch behavior for scrolling
+
+                allowTouchMove: window.innerWidth >= 768, // Enable Swiper on larger screens only
 
             });
+
         });
     </script>
 </body>
