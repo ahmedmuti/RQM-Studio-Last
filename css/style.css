@@ -37,6 +37,10 @@
     color: var(--main-color);
 }
 
+.bg-color {
+    background-color: var(--main-color);
+}
+
 .main-bg {
     background-color: var(--main-color);
 }
@@ -47,6 +51,18 @@
 
 .border-color {
     border: 1px solid var(--border-color);
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.my-100 {
+    margin: 100px 0;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 /* end of the global style  */
@@ -219,4 +235,31 @@ body {
         display: flex;
         gap: 10px;
     }
+}
+
+/* our vision */
+.our-vision p.font-book {
+    font-size: 22px;
+}
+
+.our-vision .see-more {
+    margin-top: 100px !important;
+    overflow: hidden;
+    /* background-image: url(../imgs/our-vision.png); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 13.336px 33.339px 33.339px 33.339px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../imgs/our-vision.png) lightgray 50% / cover no-repeat;
+}
+
+/* see future */
+
+.see-future a,
+.build a {
+    border-radius: 17.336px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+
+
 }
