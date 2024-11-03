@@ -294,7 +294,7 @@ body {
     background: linear-gradient(180deg, rgba(245, 248, 255, 0.60) 0%, rgba(245, 248, 255, 0.20) 100%);
 }
 
-.service .col-md-4>div {
+.service .col-md-6>div {
     border-radius: 12px;
     border: 0.667px solid rgba(128, 128, 128, 0.14);
     background: #FFF;
