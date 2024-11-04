@@ -222,8 +222,8 @@ body {
 
 @media (max-width:992px) {
     .navbar ul {
-        background-color: #f15a2c;
-        padding: 10px 0;
+        background-color: var(--main-color);
+        padding: 20px 0;
         margin: 10px 0;
     }
 
@@ -300,4 +300,209 @@ body {
     background: #FFF;
     box-shadow: 4px 4px 0px 0px rgba(58, 64, 90, 0.22);
     padding: 12px 24px;
+}
+
+/* timeline */
+/* General styling */
+
+
+.timeline {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Timeline items styling */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    order: 1;
+    margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 2;
+    margin-left: auto;
+}
+
+.timeline-item .timeline-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e6f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.timeline-item .timeline-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Timeline content styling */
+.timeline-content {
+    /* background-color: #fff; */
+    padding: 15px 25px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    position: relative;
+}
+
+.timeline-content .timeline-number {
+    color: #FFF;
+    text-align: right;
+    text-shadow: 1.334px 1.334px 0px #009FDA, 1.334px -1.334px 0px #009FDA, -1.334px 1.334px 0px #009FDA, -1.334px -1.334px 0px #009FDA, 1.334px 0px 0px #009FDA, 0px 1.334px 0px #009FDA, -1.334px 0px 0px #009FDA, 0px -1.334px 0px #009FDA;
+    font-family: Inter;
+    font-size: 20.525px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.006px;
+    /* 155.939% */
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #0E171A;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #0E171A;
+    font-family: var(--qatar-book);
+}
+
+/* Line connecting items */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 4px;
+    height: 80%;
+    background-color: var(--main-color);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contact button styling */
+.contact-btn {
+    margin-top: 40px;
+}
+
+.contact-btn a {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 17.336px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.contact-btn a:hover {
+    background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        width: 90%;
+    }
+
+    .timeline-title {
+        font-size: 1.5rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+    }
+
+    .timeline-item .timeline-icon {
+        margin: 0 0 10px 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin: 0;
+        order: 1;
+    }
+
+    .timeline-content {
+        padding: 10px 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+
+    .timeline:before {
+        left: 5px;
+        transform: none;
+    }
+
+    .timeline-item:before {
+        left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content .timeline-number {
+        font-size: 1.2rem;
+    }
+
+    .contact-btn a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* contact  */
+
+.contact-form .container {
+    border-radius: var(--font-line-height-2XL, 30px);
+    background: #F7F8FB;
+}
+
+.contact-form label {
+    color: rgba(2, 2, 30, 0.50);
+
+    font-family: var(--qatar-book);
 }
