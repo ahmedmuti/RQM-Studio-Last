@@ -94,22 +94,22 @@
     <nav class="navbar navbar-expand-lg fixed-top p-0 py-2" id="navbar">
         <div class="container my-2">
             <div>
-                <button class="navbar-toggler border-0 mx-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-0 mx-sm-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
                     <i class="ri-menu-2-line fs-1 toggler-icon text-white"></i>
                 </button>
-                <a class="navbar-brand ms-4" href="#"><img src="./imgs/WhiteRQMLogo.svg" alt="RQM Logo" /></a>
+                <a class="navbar-brand ms-sm-4" href="#"><img src="./imgs/WhiteRQMLogo.svg" alt="RQM Logo" /></a>
 
             </div>
 
-            <div class="d-flex gap-1 align-items-center ">
+            <div class="d-flex gap-sm-1 align-items-center ">
                 <!-- Language Switcher after Logo -->
                 <a class="text-decoration-none text-white d-none d-lg-none d-sm-block" href="#"
                     aria-label="Switch to English">
                     EN <i class="ri-earth-fill"></i>
                 </a>
                 <!-- Logo -->
-                <a class="nav-link nav-contact px-3 py-2 ms-4 d-lg-none d-block" href="#contact-form"
+                <a class="nav-link nav-contact px-3 py-2 ms-sm-4 d-lg-none d-block" href="#contact-form"
                     aria-label="Contact Us">تواصل
                     معنا</a>
             </div>
@@ -321,8 +321,8 @@
         <section id="build" class="build my-100">
             <div class="container">
                 <div class="row align-items-center gy-5">
-                    <div class="col-md-5 ">
-                        <img src="./imgs/see-future.png" class="w-100 " alt="">
+                    <div class="col-md-5 order-md-0 order-1">
+                        <img src="./imgs/build.webp" class="w-100 " alt="">
 
                     </div>
                     <div class="col-md-6 offset-lg-1">
@@ -654,10 +654,10 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                autoplay: {
-                    delay: 3000, // Delay between slides in milliseconds
-                    disableOnInteraction: false, // Continue autoplay after user interaction
-                },
+                // autoplay: {
+                //     delay: 3000, // Delay between slides in milliseconds
+                //     disableOnInteraction: false, // Continue autoplay after user interaction
+                // },
                 lazy: true, // Lazily load images
                 observer: true, // Reinitialize when content changes
                 observeParents: true, // Observe container changes
