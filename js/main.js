@@ -28,8 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.classList.toggle("open");
         if (icon.classList.contains("open")) {
             icon.classList.replace("ri-menu-2-line", "ri-close-line");
+            navbar.classList.add("main-bg");
+
         } else {
             icon.classList.replace("ri-close-line", "ri-menu-2-line");
+            navbar.classList.remove("main-bg");
+
         }
     });
 });
