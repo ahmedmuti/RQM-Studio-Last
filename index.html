@@ -89,13 +89,14 @@
     </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top p-0 py-2">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <nav class="navbar navbar-expand-lg fixed-top p-0 py-2" id="navbar">
         <div class="container my-2">
             <div>
                 <button class="navbar-toggler border-0 mx-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
-                    <i class="ri-menu-2-line fs-1 text-white"></i>
+                    <i class="ri-menu-2-line fs-1 toggler-icon text-white"></i>
                 </button>
                 <a class="navbar-brand ms-4" href="#"><img src="./imgs/WhiteRQMLogo.svg" alt="RQM Logo" /></a>
 
@@ -113,23 +114,23 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <!-- Main Navigation Links -->
-                <ul class="navbar-nav me-auto text-center mb-lg-0 d-flex align-items-center gy-5 gap-3">
-                    <li class="nav-item"><a class="nav-link active px-3 py-2" href="#home" aria-label="Home">الرئيسية <i
+                <ul class="navbar-nav me-auto text-center mb-lg-0 d-flex align-items-center gy-5 gap-2">
+                    <li class="nav-item"><a class="nav-link active " href="#home" aria-label="Home">الرئيسية <i
                                 class="ri-home-line"></i></a></li>
-                    <li class="nav-item"><a class="nav-link fw-bolder" href="#present" aria-label="Our Story">قصتنا
+                    <li class="nav-item"><a class="nav-link fw-bolder" href="#our-vision" aria-label="Our Story">قصتنا
                             <i class="ri-compass-3-line"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#empower" aria-label="Our Services">خدماتنا
+                    <li class="nav-item"><a class="nav-link" href="#see-future" aria-label="Our Services">خدماتنا
                             <i class="ri-arrow-down-line"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#our-us" aria-label="Our Company">شركتنا <i
+                    <li class="nav-item"><a class="nav-link" href="#service" aria-label="Our Company">شركتنا <i
                                 class="ri-group-3-line"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#questions" aria-label="Contact Us">نسمعك <i
+                    <li class="nav-item"><a class="nav-link" href="#contact-form" aria-label="Contact Us">نسمعك <i
                                 class="ri-headphone-line"></i></a></li>
                 </ul>
 
                 <!-- Contact Link -->
                 <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center d-lg-flex d-none">
                     <!-- Language Switcher for Mobile (shown only on smaller screens) -->
-                    <li class="nav-item "><a class="nav-link text-white" href="#" aria-label="Switch to English">EN
+                    <li class="nav-item lang"><a class="nav-link " href="#" aria-label="Switch to English">EN
                             <i class="ri-earth-fill"></i></a></li>
                     <li class="nav-item"><a class="nav-link nav-contact px-3 py-2 ms-2" href="#"
                             aria-label="Contact Us">تواصل معنا</a></li>
@@ -141,7 +142,7 @@
 
 
     <!-- Swiper -->
-    <header>
+    <header id="home">
 
         <div class="swiper mySwiper ">
 
@@ -253,7 +254,6 @@
                 </div>
             </div>
         </section>
-
         <section id="see-future" class="see-future mt-100">
             <div class="container">
                 <div class="row align-items-center gy-5">
@@ -272,7 +272,6 @@
                 </div>
             </div>
         </section>
-
         <section id="build" class="build my-100">
             <div class="container">
                 <div class="row align-items-center gy-5">
@@ -290,7 +289,6 @@
                 </div>
             </div>
         </section>
-
         <section id="target" class="target my-100">
             <div class="container">
                 <div class="row gx-4">
@@ -370,7 +368,6 @@
                 </div>
             </div>
         </section>
-
         <section id="service" class="service text-center">
             <div class="container">
                 <div class="row justify-content-center gy-5">
@@ -414,8 +411,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="timeline ">
             <h2 class="timeline-title text-center">اربط حزام الرحلة</h2>
 
@@ -524,8 +519,6 @@
 
             </div>
         </section>
-
-
         <section id="partner" class="partner my-100">
             <div class="container">
                 <div class="row justify-content-center gy-5 border-top">
@@ -548,7 +541,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-form">
+        <section class="contact-form w-75 m-auto mb-100" id="contact-form">
             <div class="container p-5">
                 <h2 class="form-title text-center border-bottom pb-5 mb-3">تواصل معنا</h2>
                 <form>
@@ -570,17 +563,18 @@
                         <label for="details">تفاصيل أكثر</label>
                         <textarea id="details" class="form-control"></textarea>
                     </div>
-                    <div class="form-footer my-3">
-                        <button type="submit" class="text-white  bg-color border-0 px-3">ارسل رسالة <svg
+                    <div class="form-footer my-3 d-flex justify-content-between align-items-center">
+
+                        <p class="privacy-policy font-book">
+                            بإرسال هذا النموذج أؤكد أنني قد <br> قرأت ووافق على سياسة الخصوصية
+                        </p>
+                        <button type="submit" class="text-white rounded-3 bg-color py-2 border-0 px-3">ارسل رسالة <svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
                                 fill="none">
                                 <path
                                     d="M7.2191 8.25047L10.519 11.5503L9.57616 12.4931L5.3335 8.25047L9.57616 4.00781L10.519 4.95062L7.2191 8.25047Z"
                                     fill="white" />
                             </svg></button>
-                        <p class="privacy-policy">
-                            بإرسال هذا النموذج أؤكد أنني قد قرأت ووافق على سياسة الخصوصية
-                        </p>
                     </div>
                 </form>
             </div>
@@ -599,7 +593,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
+    <script src="./js/main.js"></script>
     <!-- Initialize Swiper -->
     <script defer>
 
