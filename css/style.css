@@ -442,6 +442,7 @@ body {
     background-color: var(--main-color);
     transform: translateX(-50%);
     z-index: 1;
+
 }
 
 .timeline-item:before {
@@ -454,6 +455,19 @@ body {
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+
+@media (max-width:1000px) {
+    .timeline:before {
+        display: none !important;
+    }
+
+    .timeline-item:before {
+        display: none !important;
+
+    }
 }
 
 /* Contact button styling */

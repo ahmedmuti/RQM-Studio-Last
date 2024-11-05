@@ -83,3 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     targetSection.style.marginBottom = `${footerHeight}px`;
 });
 
+
+AOS.init();
+AOS.refresh();
