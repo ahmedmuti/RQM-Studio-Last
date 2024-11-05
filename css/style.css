@@ -86,11 +86,12 @@ body {
 
 /* start of the navbar style */
 #navbar {
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .scrolled {
     background-color: var(--main-color);
+    margin-top: 0 !important;
     /* Set to desired color */
 }
 

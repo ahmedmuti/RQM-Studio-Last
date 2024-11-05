@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Change the background of the navbar when the second section is reached
 
-        if (secondSectionTop <= 200) {
+        if (secondSectionTop <= 250) {
 
             navbar.classList.add("scrolled");
         } else {
