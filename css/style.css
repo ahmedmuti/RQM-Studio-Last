@@ -248,6 +248,16 @@ body {
     border-bottom-right-radius: 2% !important;
 }
 
+.header-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center right;
+
+
+}
+
+
 @media (max-width:992px) {
     .navbar ul {
         background-color: var(--main-color);
@@ -277,7 +287,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 13.336px 33.339px 33.339px 33.339px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../imgs/our-vision.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../imgs/longPic1.webp) lightgray 50% / cover no-repeat;
 }
 
 /* see future */
