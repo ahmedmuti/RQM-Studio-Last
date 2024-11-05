@@ -69,3 +69,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// footer height
+
+document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("footer");
+    const targetSection = document.getElementById("main");
+
+    // Get the footer's height
+    const footerHeight = footer.clientHeight;
+
+    // Set the height of the target section
+    targetSection.style.marginBottom = `${footerHeight}px`;
+});
+

@@ -542,6 +542,21 @@ body {
     background: #F7F8FB;
 }
 
+.contact-form input,
+.contact-form textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(2, 2, 30, 0.20);
+    border-radius: 0;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
+
 .contact-form label {
     color: rgba(2, 2, 30, 0.50);
 
