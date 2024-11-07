@@ -592,3 +592,18 @@ body {
 
     font-family: var(--qatar-book);
 }
+
+.footer i {
+    font-size: 20px;
+}
+
+@media (max-width:500px) {
+    .footer h5 {
+        font-size: 16px;
+    }
+
+    .footer li,
+    .footer p {
+        font-size: 14px !important;
+    }
+}
