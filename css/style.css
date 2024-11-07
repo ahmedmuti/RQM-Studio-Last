@@ -300,10 +300,24 @@ body {
 
 .see-future a,
 .build a,
-.service a {
+.service a,
+.timeline a,
+.contact-form button {
     border-radius: 17.336px;
     padding: 8px 16px;
     cursor: pointer;
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+
+}
+
+.see-future a:hover,
+.build a:hover,
+.service a:hover,
+.timeline a:hover {
+    border: 1px solid var(--main-color) !important;
+    background-color: #fff !important;
+    color: var(--main-color) !important;
 
 }
 
