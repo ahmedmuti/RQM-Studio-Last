@@ -91,9 +91,14 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <div class="p-md-4 p-2 bg-white" id="main">
+    <div class="loading w-100 h-100 position-fixed  align-items-center justify-content-center flex-column gap-5"
+        id="loading">
+        <img src="./imgs/loading.gif" alt="">
+        <img src="./imgs/progrress.gif" alt="">
+    </div>
+    <div class="  bg-white pb-0 pt-md-2 px-md-2 " id="main" style="display: none;">
 
-        <nav class="navbar navbar-expand-lg fixed-top p-0 py-2 mt-md-5 mt-2 mx-md-0 mx-2" id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top p-0 py-xl-0 mt-md-1 mt-2 mx-md-0 mx-2" id="navbar">
             <div class="container my-2">
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler border-0 mx-sm-2" type="button" data-bs-toggle="collapse"
@@ -157,10 +162,11 @@
                             <div class=" h-100 container ">
                                 <div class="row  h-100 align-items-center justify-content-between ">
                                     <div class="col-lg-6 text-white text-start">
-                                        <h1>نقل أعمالك
+                                        <h1 class="mb-4">نقل أعمالك
                                             <br> من الصفر الى الواحد
                                         </h1>
-                                        <p>بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة متأنية وتخطيط
+                                        <p class="lh-base">بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة
+                                            متأنية وتخطيط
                                             دقيق،
                                             فابتكرنا حلولًا رقمية تنطلق من لغة الآلة وتصل إلى أبعاد التقنية الحديثة،
                                             لتتجسد
@@ -186,10 +192,11 @@
                             <div class=" h-100 container  ">
                                 <div class="row  h-100 align-items-center justify-content-between ">
                                     <div class="col-lg-6 text-white text-start">
-                                        <h1>نقل أعمالك
+                                        <h1 class="mb-4">نقل أعمالك
                                             <br> من الصفر الى الواحد
                                         </h1>
-                                        <p>بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة متأنية وتخطيط
+                                        <p class="lh-base">بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة
+                                            متأنية وتخطيط
                                             دقيق،
                                             فابتكرنا حلولًا رقمية تنطلق من لغة الآلة وتصل إلى أبعاد التقنية الحديثة،
                                             لتتجسد
@@ -214,10 +221,11 @@
                             <div class=" h-100 container  ">
                                 <div class="row  h-100 align-items-center justify-content-between ">
                                     <div class="col-lg-6 text-white text-start">
-                                        <h1>نقل أعمالك
+                                        <h1 class="mb-4">نقل أعمالك
                                             <br> من الصفر الى الواحد
                                         </h1>
-                                        <p>بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة متأنية وتخطيط
+                                        <p class="lh-base">بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة
+                                            متأنية وتخطيط
                                             دقيق،
                                             فابتكرنا حلولًا رقمية تنطلق من لغة الآلة وتصل إلى أبعاد التقنية الحديثة،
                                             لتتجسد
@@ -242,10 +250,11 @@
                             <div class=" h-100 container  ">
                                 <div class="row  h-100 align-items-center justify-content-between ">
                                     <div class="col-lg-6 text-white text-start">
-                                        <h1>نقل أعمالك
+                                        <h1 class="mb-4">نقل أعمالك
                                             <br> من الصفر الى الواحد
                                         </h1>
-                                        <p>بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة متأنية وتخطيط
+                                        <p class="lh-base">بدأنا رحلتنا من الجذور، مع أول لَبنة في بنية مشروعنا، بدراسة
+                                            متأنية وتخطيط
                                             دقيق،
                                             فابتكرنا حلولًا رقمية تنطلق من لغة الآلة وتصل إلى أبعاد التقنية الحديثة،
                                             لتتجسد
@@ -276,13 +285,8 @@
             <section id="our-vision" class="our-vision my-5 py-5">
                 <div class="container  py-5 text-center">
                     <h2 class="my-4 " data-aos="fade-up" data-aos-duration="850" data-aos-once="false">رؤيتنا</h2>
-                    <p class="font-book mx-lg-5  px-lg-5" data-aos="fade-up" data-aos-duration="850"
-                        data-aos-once="false">"رؤيتنا لبلادنا التي نريدها، دولة قوية مزدهرة تتسع للجميع،
-                        دستورها
-                        الإسلام
-                        ومنهجها
-                        الوسطية، تتقبل
-                        الآخر. سنرحب بالكفاءات من كل مكان، وسيلقى كل احترام من جاء ليشاركنا البناء والنجاح."</p>
+                    <p id="element" class="font-book text-start mx-lg-5  px-lg-5 lh-base" data-aos="fade-up"
+                        data-aos-duration="850" data-aos-once="false"></p>
                     <div class="text-end mx-lg-5 mx-2 px-lg-5">
                         <span class="main-color" data-aos="fade-up" data-aos-duration="850" data-aos-once="false">ولي
                             العهد</span>
@@ -626,7 +630,7 @@
 
                     </div>
                 </div>
-
+                <div class="clear-fix"></div>
                 <!-- Contact Button -->
                 <div class="contact-btn text-center">
                     <a href="" class="text-white  bg-color text-decoration-none d-inline-block ">تواصل معنا</a>
@@ -748,6 +752,34 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        let typedStarted = false;
+        window.addEventListener("scroll", function () {
+            const targetSection = document.getElementById("our-vision");
+            const sectionPosition = targetSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            // Check if section is in the viewport
+            if (sectionPosition < windowHeight && !typedStarted) {
+                var typed = new Typed('#element', {
+                    strings: [`"رؤيتنا لبلادنا التي نريدها، دولة قوية مزدهرة تتسع للجميع، دستورها الإسلام ومنهجها الوسطية، تتقبل الآخر. سنرحب بالكفاءات من كل مكان، وسيلقى كل احترام من جاء ليشاركنا البناء  والنجاح."`],
+                    typeSpeed: 35,
+                    showCursor: false,
+                    onComplete: (self) => {
+
+                        setTimeout(() => {
+                            document.getElementById('element').style.cssText = `text-align: center !important`
+
+                        }, 1000)
+                    },
+
+                });
+                typedStarted = true;
+            }
+        });
+
+    </script>
     <script src="./js/main.js"></script>
     <!-- Initialize Swiper -->
     <script defer>
