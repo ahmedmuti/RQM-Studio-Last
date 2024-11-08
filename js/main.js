@@ -86,17 +86,20 @@ document.addEventListener("DOMContentLoaded", function () {
     targetSection.style.marginBottom = `${footerHeight + 60}px`;
 });
 
-
-AOS.init();
-AOS.refresh();
-
 window.addEventListener("load", function () {
     const loadingScreen = document.getElementById("loading");
     const mainContent = document.getElementById("main");
     setTimeout(() => {
         loadingScreen.style.display = "none"; // Hide loading screen
         document.body.style.overflow = "auto"; // Hide loading screen
+        AOS.init();
+        AOS.refresh();
     }, 3000)
 
     mainContent.style.display = "block";  // Show main content
 });
+
+
+AOS.init();
+AOS.refresh();
+
